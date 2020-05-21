@@ -1,0 +1,38 @@
+.listStyle{
+    background-color: white;
+    height:50px;
+    font-size: 30px;
+    padding-left: 20px;
+    border: 1px solid grey;
+
+}
+
+
+
+.editButtons{
+float: right;
+font-size: large;
+margin-right: 3px;
+}
+
+.trashButtons{
+    float: right;
+    font-size: large;
+    margin-right: 3px;
+}
+.listStyle:hover{
+    border: 2px solid blue;
+    background-color: grey;
+
+}
+
+.editButtons:hover{
+    font-size: x-large;
+    color: green;
+}
+
+.trashButtons:hover{
+    font-size: x-large;
+    color:red;
+    
+}
