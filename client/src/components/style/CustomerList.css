@@ -6,9 +6,15 @@
 
 .nameInfo{
 padding-left: 0px;
-
+color: black;
 
 }
+.nameInfo:hover{
+   
+    color: lightskyblue;
+    font-weight: 400;
+    }
+
 .emailInfo{
     padding-left: 0px;
 
@@ -49,7 +55,7 @@ padding-left: 0px;
 }
 
 .customerList:hover{
-    border:1px solid lightblue;
+    border:2px solid lightseagreen;
 
 }
 

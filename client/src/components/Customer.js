@@ -62,7 +62,7 @@ editCustomer = id => {
     return (
       <div className="newcontainer">
 
-    <h1>Customer List</h1>
+   
     <br></br>
 
     <input type="text" name="search" ></input> 
@@ -70,11 +70,11 @@ editCustomer = id => {
     <br></br>
     <Row>
    
-      <Col><strong>Name</strong></Col>
-      <Col><strong>Email</strong></Col>
-      <Col><strong>Phone</strong></Col>
-      <Col><strong>Contact</strong></Col>
-      <Col></Col>
+      <Col className="label"><strong>Name</strong></Col>
+      <Col className="label"><strong>Email</strong></Col>
+      <Col className="label"><strong>Phone</strong></Col>
+      <Col className="label"><strong>Contact</strong></Col>
+      <Col className="label"></Col>
     </Row>
       {customerlist}
 

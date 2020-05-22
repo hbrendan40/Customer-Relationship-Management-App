@@ -21,8 +21,12 @@ function CustomerList(props){
         <ListGroup className="customerList" key={props.customer.customer_id}>
         <Row>
             <Col>
+            
             <ListGroup.Item>
-                <span className="nameInfo"> {props.customer.firstName}    {props.customer.lastName}  </span>
+            <input type="checkbox" id="checkbox" name="checkbox"></input>
+            
+            <Link to={`/Customer/Edit/${props.customer.customer_id}&${props.customer.firstName}&${props.customer.lastName}&${props.customer.email}&${props.customer.phone}`}>  <span className="nameInfo"> {props.customer.firstName}    {props.customer.lastName}  </span></Link>
+               
             </ListGroup.Item>
             </Col>
 
@@ -57,7 +61,7 @@ function CustomerList(props){
                 
 
 
-            <Link to={`/Customer/Edit/${props.customer.customer_id}&${props.customer.firstName}&${props.customer.lastName}&${props.customer.email}&${props.customer.phone}`}><FaEdit className="editButton"/> </Link>
+            
 
        
 
