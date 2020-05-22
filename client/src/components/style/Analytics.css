@@ -5,33 +5,37 @@
 }
 
 .card{
-    height:400px;
+    height:450px;
     width:450px;
     float: left;
     margin-left: auto;
     margin-right: auto;
     margin-top: 50px;
     margin-bottom: 20px;
+    border: 1px solid grey;
 }
 
 
 .squares{
-    height:400px;
+    height:470px;
     width:470px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
     background-color: white;
-    
+    border: 1px solid grey;
 }
 
 .rectangles{
 
-    height:400px;
+    height:450px;
     width:820px;
     margin-top: 20px;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 20px;
     background-color: white;
+    border: 1px solid grey;
 
 }

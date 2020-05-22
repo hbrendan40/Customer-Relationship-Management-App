@@ -1,23 +1,22 @@
 
 .customerList{
-    background-color: lightgrey;
-    height:50px;
-    font-size: 22px;
-    margin: auto;
-    padding-top: 6px;
-    border: 1px solid orange;
-  
+    border: 1px solid grey;
 }
+
 
 .nameInfo{
 padding-left: 0px;
+
+
 }
 .emailInfo{
     padding-left: 0px;
+
 }
 
 .phoneInfo{
     padding-left: 0px;
+    
 }
 
 .contactInfo{
@@ -27,15 +26,17 @@ padding-left: 0px;
 
 
 .editButton{
-    float: right;
+  
     font-size: 22px;
     margin-right: 3px;
+ 
     }
 
 .trashButton{
-        float: right;
+      
         font-size: 22px;
         margin-right: 3px;
+        
     }
 
 
@@ -44,11 +45,12 @@ padding-left: 0px;
     padding-right: 0px;
     margin-left: 0;
     margin-right: 0;
+   
 }
 
 .customerList:hover{
-    border:1px solid blue;
-    background-color:gray;
+    border:1px solid lightblue;
+
 }
 
 .editButton:hover{

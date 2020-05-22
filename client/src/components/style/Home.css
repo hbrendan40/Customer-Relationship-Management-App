@@ -1,8 +1,4 @@
-.HomePageBackground {
-  
 
-  
-  }
   
   
   .jumbotron{
@@ -23,38 +19,6 @@
 
 
 
-.square{
-  height: 300px;
-
-  width:400px;
-
-margin-top: 0px;
-  margin-left: auto;
-
-  
-  float: left;
-  margin-bottom: 10px;
-  background-color: white;
-  box-shadow: 5px 10px #888888;
-
-}
-
-.rectangle{
-
-
-  width: 750px;
-  height: 300px;
-  max-height: 400px;
-  margin-top: 0px;
-  border-top: 0px;
-  
-
-
-
-
-background-color: white;
-box-shadow: 5px 10px #888888;
-}
 
 
 
@@ -84,4 +48,39 @@ box-shadow: 5px 10px #888888;
   border-radius: 10px;
   -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
   background-color: #4285F4;
+}
+
+
+.square{
+  height: 300px;
+
+  width:400px;
+
+margin-top: 0px;
+  margin-left: auto;
+
+  
+  float: left;
+  margin-bottom: 10px;
+  background-color: white;
+  box-shadow: 5px 10px #888888;
+
+}
+
+.rectangle{
+
+
+  width: 700px;
+  height: 300px;
+ 
+  margin-top: 0px;
+  border-top: 0px;
+  margin-right: 0%;
+  
+
+
+
+
+background-color: white;
+box-shadow: 5px 10px #888888;
 }

@@ -1,8 +1,6 @@
 .listStyle{
-    background-color: white;
-    height:50px;
-    font-size: 30px;
-    padding-left: 20px;
+   font-size: large;
+   font-weight: 500;
     border: 1px solid grey;
 
 }
@@ -27,12 +25,12 @@ margin-right: 3px;
 }
 
 .editButtons:hover{
-    font-size: x-large;
+    
     color: green;
 }
 
 .trashButtons:hover{
-    font-size: x-large;
+    
     color:red;
     
 }

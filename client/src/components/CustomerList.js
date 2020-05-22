@@ -6,8 +6,8 @@ import { FaTrashAlt , FaEdit} from "react-icons/fa";
 //import Form from './Form';
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
-import Form from './Form'
-import test from './test'
+
+import ListGroup from 'react-bootstrap/ListGroup'
 
 
 function CustomerList(props){
@@ -18,22 +18,29 @@ function CustomerList(props){
     return(
         <div>
         
-        <Row className="customerList" key={props.customer.customer_id}>
-
+        <ListGroup className="customerList" key={props.customer.customer_id}>
+        <Row>
             <Col>
+            <ListGroup.Item>
                 <span className="nameInfo"> {props.customer.firstName}    {props.customer.lastName}  </span>
+            </ListGroup.Item>
             </Col>
 
 
             <Col >
+            <ListGroup.Item>
                 <span className="emailInfo">{props.customer.email}</span>
+                </ListGroup.Item>
             </Col>
         
             <Col >
+            <ListGroup.Item>
                 <span className="phoneInfo">{props.customer.phone}</span> 
+                </ListGroup.Item>
             </Col>
 
              <Col>
+             <ListGroup.Item>
                 <select className="contactInfo" name="contact" id="contact" defaultValue="Contacted">
                 <option value="Not-Contacted">Not Contacted</option>
                 <option value="Contacted">Contacted</option>
@@ -41,9 +48,11 @@ function CustomerList(props){
                 <option value="Contacted-via-phone">Contacted-via-phone</option>
                 <option value="Contacted-via-Facebook">Contacted-via-Facebook</option>
                 </select>
+                </ListGroup.Item>
             </Col>  
 
                 <Col className="edittrashButtons">  
+                <ListGroup.Item>
             
                 
 
@@ -56,10 +65,11 @@ function CustomerList(props){
          
                 
                 <span onClick = {() => props.deleteCustomer(props.customer.customer_id)} > <FaTrashAlt className ="trashButton"/> </span>
+                </ListGroup.Item>
                 </Col>
 
-            
-            </Row>
+                </Row>
+            </ListGroup>
 
 
          

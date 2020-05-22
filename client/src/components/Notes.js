@@ -1,9 +1,11 @@
 import React,{Component} from 'react';
 import NotesList from './NotesList';
-import './style/Notes.css'
+//import './style/Notes.css'
 import { Container } from 'react-bootstrap';
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Button from 'react-bootstrap/Button'
+import Form from 'react-bootstrap/Form'
 
 class Notes extends Component {
     state = {
@@ -75,15 +77,19 @@ class Notes extends Component {
           <Col>
 
         
-
-        <textarea value={newNote.description} onChange={e => this.setState({newNote: {...newNote, description: e.target.value}})}/> 
-        <br></br>
+          <Form>
+  <Form.Group controlId="exampleForm.ControlInput1">
+    <Form.Label>Note</Form.Label>
+    <Form.Control type="note" value={newNote.description} onChange={e => this.setState({newNote: {...newNote, description: e.target.value}})} placeholder="Write down your notes" />
+  </Form.Group>
+  </Form>
+     
 
 
          
     
         
-        <button onClick={this.addNote}>Add Note </button>
+        <Button onClick={this.addNote}>Add Note </Button>
 
         </Col>
        

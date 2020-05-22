@@ -2,6 +2,8 @@ import React, {Component} from "react";
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import {Link} from 'react-router-dom'
+import Form from 'react-bootstrap/Form'
+import Button from 'react-bootstrap/Button'
 
 class CustomerEdit extends Component {
     constructor(props) {
@@ -69,68 +71,81 @@ class CustomerEdit extends Component {
     render() {
       return (
         <div className="container">
+          <div className="jumbotron">
         
 
-        <div className="jumbotron">
-        <Link to={`/Customer`}><button>Go Back</button> </Link>
-        <h1>Edit Customer Information</h1>
-
-        <form onSubmit={this.handleSubmit}>
-             <Col>
-             <Row>
-          <label>
-            First Name:
-            <input type="text" name="FirstName" defaultValue={this.state.customerFirstName} onChange={this.handleChange} />
-          </label>
-          </Row>
-          <Row>
-          <label>
-            Last Name:
-            <input type="text" name="LastName" defaultValue={this.state.customerLastName} onChange={this.handleChange} />
-          </label>
-          </Row>
-
-            <Row>
-          <label>
-            Email:
-            <input type="text" name="Email" defaultValue={this.state.customerEmail} onChange={this.handleChange} />
-          </label>
-          </Row>
-
-          <Row>
-          <label>
-            Phone:
-            <input type="text" name="Phone" defaultValue={this.state.customerPhone} onChange={this.handleChange} />
-          </label>
-          </Row>
-
-          <Row>
-          <label>
-            Address:
-            <input type="text" name="address" defaultValue="123 Maple St" onChange={this.handleChange} />
-          </label>
-          </Row>
-
-          <Row>
-          <label>
-            City:
-            <input type="text" name="city" defaultValue="San Mateo" onChange={this.handleChange} />
-          </label>
-          </Row>
-
-          <Row>
-          <label>
-            Zip Code:
-            <input type="text" name="zip" defaultValue="94065" onChange={this.handleChange} />
-          </label>
-          </Row>
-
+       
       
-          <input type="submit" value="Submit Change" />
-          </Col>
-        </form>
+    
+        <Link to={`/Customer`}><Button variant="info">Go Back</Button> </Link>
+        <h1>Edit Customer Information</h1>
+        <Form onSubmit={this.handleSubmit}>
+
+
+        <Form.Row>
+    
+    <Form.Group as={Col} controlId="formGridFirstName">
+      <Form.Label>First Name</Form.Label>
+      <Form.Control type="text" name="FirstName" defaultValue={this.state.customerFirstName} onChange={this.handleChange} placeholder="First Name" />
+    </Form.Group>
+
+    <Form.Group as={Col} controlId="formGridLastName">
+      <Form.Label>Last Name</Form.Label>
+      <Form.Control type="text" name="LastName" defaultValue={this.state.customerLastName} onChange={this.handleChange} placeholder="Last Name" />
+    </Form.Group>
+  </Form.Row>
+  <Form.Row>
+    
+    <Form.Group as={Col} controlId="formGridEmail">
+      <Form.Label>Email</Form.Label>
+      <Form.Control type="email" name="Email" defaultValue={this.state.customerEmail} onChange={this.handleChange} placeholder="Email" />
+    </Form.Group>
+
+    <Form.Group as={Col} controlId="formGridPhone">
+      <Form.Label>Phone</Form.Label>
+      <Form.Control type="phone" name="Phone" defaultValue={this.state.customerPhone} onChange={this.handleChange} placeholder="Phone" />
+    </Form.Group>
+  </Form.Row>
+
+  <Form.Group controlId="formGridAddress1">
+    <Form.Label>Address</Form.Label>
+    <Form.Control name="address" defaultValue="123 Maple St" onChange={this.handleChange} placeholder="1234 Main St" />
+  </Form.Group>
+
+  <Form.Group controlId="formGridAddress2">
+    <Form.Label>Address 2</Form.Label>
+    <Form.Control placeholder="Apartment, studio, or floor" />
+  </Form.Group>
+
+  <Form.Row>
+    <Form.Group as={Col} controlId="formGridCity">
+      <Form.Label>City</Form.Label>
+      <Form.Control type="text" name="city" defaultValue="San Mateo" onChange={this.handleChange} />
+    </Form.Group>
+
+    <Form.Group as={Col} controlId="formGridState">
+      <Form.Label>State</Form.Label>
+      <Form.Control as="select" defaultValue="CA" value="Choose...">
+        <option>Choose...</option>
+        <option>CA</option>
+        <option>other</option>
+      </Form.Control>
+    </Form.Group>
+
+    <Form.Group as={Col} controlId="formGridZip">
+      <Form.Label>Zip</Form.Label>
+      <Form.Control type="text" name="zip" defaultValue="94065" onChange={this.handleChange}/>
+    </Form.Group>
+  </Form.Row>
+
+
+  <Button variant="primary" type="submit">
+    Submit
+  </Button>
+</Form>
+</div>
         </div>
-        </div>
+        
       );
     }
   }

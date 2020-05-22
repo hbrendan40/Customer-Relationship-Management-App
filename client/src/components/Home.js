@@ -37,8 +37,8 @@ class Home extends Component {
 
         </div>
       {/* card2*/}
-      <MDBContainer>
-      <div className="rectangle scrollbar scrollbar-primary  mt-5 mx-auto" style={scrollContainerStyle}>
+      <MDBContainer className="rectangle" >
+      <div className="scrollbar scrollbar-primary  mt-5 mx-auto" style={scrollContainerStyle}>
       <Customer/>
       </div>
 
