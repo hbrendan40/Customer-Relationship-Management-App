@@ -11,12 +11,14 @@
 float: right;
 font-size: large;
 margin-right: 3px;
+color: green;
 }
 
 .trashButtons{
     float: right;
     font-size: large;
     margin-right: 3px;
+    color: orangered;
 }
 .listStyle:hover{
     border:2px solid lightseagreen;
@@ -26,11 +28,11 @@ margin-right: 3px;
 
 .editButtons:hover{
     
-    color: green;
+    color: darkgreen;
 }
 
 .trashButtons:hover{
-    
+   
     color:red;
     
 }

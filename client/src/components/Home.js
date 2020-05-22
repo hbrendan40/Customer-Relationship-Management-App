@@ -9,7 +9,7 @@ import { MDBContainer, MDBScrollbar } from "mdbreact";
 class Home extends Component {
   
     render(){
-      const scrollContainerStyle = { width: "750px", maxHeight: "400px" };
+      
     return (
 
       
@@ -30,21 +30,7 @@ class Home extends Component {
 
       {/* cards show casing different cards */}
       
-      <row>
-        {/* card1*/}
-        <div className="square">
-        <PieChart/>
-
-        </div>
-      {/* card2*/}
-      <MDBContainer className="rectangle" >
-      <div className="scrollbar scrollbar-primary  mt-5 mx-auto" style={scrollContainerStyle}>
-      <Customer/>
-      </div>
-
-  
-    </MDBContainer>
-      </row>
+      
 
        </div>
 

@@ -78,6 +78,7 @@ class CustomerEdit extends Component {
       
     
         <Link to={`/Customer`}><Button variant="info">Go Back</Button> </Link>
+        
         <h1>Edit Customer Information</h1>
         <Form onSubmit={this.handleSubmit}>
 
@@ -140,7 +141,7 @@ class CustomerEdit extends Component {
 
 
   <Button variant="primary" type="submit">
-    Submit
+    Submit Change
   </Button>
 </Form>
 </div>
