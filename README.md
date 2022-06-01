@@ -3,22 +3,22 @@
 
 
 
-Salesforce CRM for small business owner
+Salesforce CRM for a small business owner
 
 Why this app?
 
-This web app is to help small business owner keep track of their customer information and to help organize important information such as 
+This web app is to help the small business owners keep track of their customer information and to help organize important information such as 
 -appointment making
 -notes
-Most importantly, this is to help personalize small business owners. Every busienss has different needs in a CRM and the existing CRM out there doesnt always meet their demands and business model
+Most importantly, this is to help personalize small business owners. Every business has different needs in a CRM and the existing CRM out there doesn't always meet their demands and business model
 
 
-Steps to get new customer to business
+Steps to getting a new customer into the business
 FB Ad -> Lead Generations -> Custom CRM Web App (to collect all user information)
 
 
 
-I decdied to create this application because i worked for a start up that help small business grow and one thing that was critical for all business to get more customer is to be able to communicate to our customer effectively. Because we didnt have enough team memebrs to support, and on a budget, we had to communicate with clients customer manually and no CRm out there could use text messeging, email, and fb messenging in one app. There had to be multiple tabs open and that it very unorganize. We seen small salon open multiple tabs on their computer like excel, crm, facebook, instagram, google voice, email, etc. Basically whoever is in the front desk is multitasking like crazy.  Ive tested so many crm out there and no crm has been user friendly except for zoho. Zoho is probably the most modular CRM out there, but it can be improved. 
+I decided to create this application because I worked for a start-up that help small businesses grow and one thing that was critical for all businesses to get more customers is to be able to communicate to our customers effectively. Because we didn't have enough team members to support, and on a budget, we had to communicate with clients' customers manually and no CRM out there could use text messaging, email, and FB messenger in one app. There had to be multiple tabs open and it was very unorganized. We have seen small salons open multiple tabs on their computer like excel, CRM, Facebook, Instagram, google voice, email, etc. Basically whoever is at the front desk is multitasking like crazy.  I've tested so many CRM out there and no CRM has been user-friendly except for Zoho. Zoho is probably the most modular CRM out there, but it can be improved. 
 
 
 Requirements
@@ -34,14 +34,14 @@ Users are created manually for security purposes
 
 
 Create a landing page <—
-login screen with authenticaion and hashing of password <—
+login screen with authentication and hashing of password <—
 
 home screen should have some useful data <—
 example
-todays sign up 
-This week sign uo
+today sign up 
+This week sign up
 Total Sign up 
-Anayltics table or graph
+Analytics table or graph
 
 
 tabs 
@@ -53,11 +53,11 @@ log out
 
 
 
-Futture implentation
+Future implementation
 
-anayltics
-Facebook Messenger API -> chat with customer   <—future implentation 
+analytics
+Facebook Messenger API -> chat with customer   <—future implementation 
 google voice
-Gmaill
+Gmail
 SMS
 MMS
